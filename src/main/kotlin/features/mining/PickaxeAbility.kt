@@ -229,7 +229,7 @@ object PickaxeAbility : FirmamentFeature {
 			ability = PickaxeAbilityData(ao, defaultAbilityDurations[ao] ?: 120.seconds)
 		}
 		event.context.matrices.push()
-		event.context.matrices.translate(MC.window.scaledWidth / 2F, MC.window.scaledHeight / 2F, 0F)
+		event.context.matrices.translate(MC.window.scaledWidth / 3F, MC.window.scaledHeight / 3F, 0F)
 		event.context.matrices.scale(TConfig.cooldownScale.toFloat(), TConfig.cooldownScale.toFloat(), 1F)
 		RenderCircleProgress.renderCircle(
 			event.context, Identifier.of("firmament", "textures/gui/circle.png"),
